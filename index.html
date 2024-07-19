@@ -92,6 +92,13 @@
                     <span class="bracket">]</span>
                 </fieldset>
                 <button id="sort">Sort</button>
+                <label for="sorting-type">Choose a sorting algorithm:</label>
+                <select id="sorting-type">
+                    <option value="" selected disabled>Select an option</option>
+                    <option value="bubble-sort">Bubble Sort</option>
+                    <option value="insertion-sort">Insertion Sort</option>
+                    <option value="selection-sort">Selection Sort</option>
+                </select>
             </form>
             <div class="output-container">
                 <h2>Output:</h2>
@@ -117,7 +124,9 @@
                         <span class="output-value" id="output-value-4">0</span>
                     </div>
                     <span class="bracket">]</span>
+                   
                 </div>
+                <div id="alert"></div>
             </div>
         </main>
         <script src="script.js"></script>

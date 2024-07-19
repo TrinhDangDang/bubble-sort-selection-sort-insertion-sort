@@ -77,6 +77,24 @@ select {
     text-align: center;;
 }
 
+#sorting-type {
+    cursor: pointer;
+    width: 100%;
+    margin-top: 15px;
+    text-decoration: none;
+    background-image: linear-gradient(black, darkblue);
+    font-size: 23px;
+    color: lightblue;
+    border: 3px solid lightblue;
+    padding: 10px 16px;
+    height: 100%;
+}
+
+label {
+    font-weight: bold;
+    font-size: 25px;
+}
+
 button {
     cursor: pointer;
     margin-top: 15px;
@@ -86,6 +104,7 @@ button {
     padding: 10px 16px;
     font-size: 23px;
     width: 100%;
+    margin-bottom: 15px;
 }
 
 select:focus-visible, button:focus-visible {
@@ -115,7 +134,8 @@ select:focus-visible, button:focus-visible {
 }
 
 .alert {
-    background-color: var(red);
+    margin-top: 15px;
+    background-color: var(--danger-background);
     border: 3px solid var(--danger-color);
     color: var(--danger-color);
 }
